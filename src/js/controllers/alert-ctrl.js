@@ -3,17 +3,33 @@
  */
 
 angular
-    .module('RDash')
+    .module('monolito')
     .controller('AlertsCtrl', ['$scope', AlertsCtrl]);
 
 function AlertsCtrl($scope) {
-    $scope.alerts = [{
-        type: 'success',
-        msg: 'Thanks for visiting! Feel free to create pull requests to improve the dashboard!'
-    }, {
-        type: 'danger',
-        msg: 'Found a bug? Create an issue with as many details as you can.'
-    }];
+    $scope.alerts = [
+        
+        {
+            type: 'success',
+            msg: 'Alerta Verde! Avisos de sucesso e conclusões de atividades/ordens!'
+        }, 
+        
+        {
+            type: 'danger',
+            msg: 'Alerta Vermelho! Avisos de fracassos e não cumprimento de atividades/ordens!'
+        },
+        
+        {
+            type: 'warning',
+            msg: 'Alerta Amarelo! Aviso para observância de prazos e acompanhamento de atividades/ordens a vencer!'
+        },
+        
+        {
+            type: 'info',
+            msg: 'Alerta Azul! Informações de caráter geral e de sistema, postado por atores pertinentes.'
+        }
+        
+    ];
 
     $scope.addAlert = function() {
         $scope.alerts.push({

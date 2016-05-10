@@ -1,1 +1,1 @@
-angular.module('RDash', ['ui.bootstrap', 'ui.router', 'ngCookies']);
+angular.module('monolito', ['ui.bootstrap', 'ui.router', 'ngCookies']);

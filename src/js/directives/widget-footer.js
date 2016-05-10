@@ -3,7 +3,7 @@
  */
 
 angular
-    .module('RDash')
+    .module('monolito')
     .directive('rdWidgetFooter', rdWidgetFooter);
 
 function rdWidgetFooter() {

@@ -4,7 +4,7 @@
  */
 
 angular
-    .module('RDash')
+    .module('monolito')
     .directive('rdLoading', rdLoading);
 
 function rdLoading() {

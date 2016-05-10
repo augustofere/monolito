@@ -1,0 +1,58 @@
+<div class="container modal-header">
+  <h3 class="modal-title">
+    <i class="glyphicon glyphicon-hand-right"></i>
+    &nbsp;&nbsp;
+    Inserir Nova Ordem
+  </h3>
+</div>
+
+<form>
+
+  <div class="container modal-body">
+
+    <div class="form-group">
+      <label for="autoridade">A autoridade</label>
+      <input type="text" class="form-control" id="autoridade" name="autoridade" ng-model="autoridade" placeholder="Autoridade responsável pelo ordem.">
+    </div>
+    
+    <div class="form-group">
+      <label for="receptor">determina que</label>
+      <input type="text" class="form-control" id="receptor" name="receptor" ng-model="receptor" placeholder="Pessoa responsável pelo cumprimento da ordem.">
+    </div>
+
+    <div class="form-group">
+      <label for="categoria">cumpra a ordem de</label>
+      <select class="form-control" id="categoria" name="categoria" ng-model="categoria" >
+        <option>Serviço</option>
+        <option>Apoio Administrativo</option>
+        <option>Deslocamento</option>
+        <option>Dispensa</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="descricao">caracterizada por</label>
+      <textarea id="descricao" name="descricao" ng-model="descricao" class="form-control" rows="5" placeholder="Descrição detalhada da ordem."></textarea>
+    </div>
+         
+    <div class="form-group">
+      <label for="dt">com data limite para a execução em</label>
+      <input id="dt" name="dt" ng-model="dt" class="form-control" placeholder="Data limite para o cumprimento da missão." disabled>
+    </div>
+
+  
+  </div>
+  
+  <div class="container modal-footer">
+  
+    <div class="col-md-6">
+      <button class="btn btn-primary btn-block" ng-click="addOrdem()">Expedir Ordem</button>
+    </div>  
+      
+    <div class="col-md-6"> 
+      <button class="btn btn-warning btn-block" onclick='javascript:history.back()'>Retornar</button>
+    </div>  
+
+  </div>
+
+</form>

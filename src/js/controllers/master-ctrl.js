@@ -2,7 +2,7 @@
  * Master Controller
  */
 
-angular.module('RDash')
+angular.module('monolito')
     .controller('MasterCtrl', ['$scope', '$cookieStore', MasterCtrl]);
 
 function MasterCtrl($scope, $cookieStore) {
@@ -10,6 +10,10 @@ function MasterCtrl($scope, $cookieStore) {
      * Sidebar Toggle & Cookie Control
      */
     var mobileView = 992;
+
+    $scope.titulo = "Home";
+    // $scope.subtitulo = "Home / Dashboard";
+    // $scope.usuario = "José da Silva";
 
     $scope.getWidth = function() {
         return window.innerWidth;
@@ -32,6 +36,19 @@ function MasterCtrl($scope, $cookieStore) {
         $scope.toggle = !$scope.toggle;
         $cookieStore.put('toggle', $scope.toggle);
     };
+
+    // $scope.mudaTitulo = function( opcaoTitulo, opcaoSubtitulo ) {
+
+    //     $scope.titulo = opcaoTitulo;
+    //     $scope.subtitulo = opcaoSubtitulo;
+        
+    //     $cookieStore.put('titulo', $scope.titulo);
+    //     $cookieStore.put('subtitulo', $scope.subtitulo);
+
+    //     // console.log(opcaoTitulo);
+    //     // console.log(opcaoSubtitulo);
+
+    // };
 
     window.onresize = function() {
         $scope.$apply();
