@@ -15,3 +15,4 @@ Para incluir módulos adicionais basta editar o arquivo `bower.json` e incluir a
 * [Leonel Samayoa](https://github.com/lsamayoa)
 * [Mathew Goldsborough](https://github.com/mgoldsborough)
 * [Ricardo Pascua Jr](https://github.com/rdpascua)
+* [Sergio Domingues](http://www.sergiodomingues.com)
